@@ -15,13 +15,16 @@
 
 /*Resetamos para iniciar o estilo*/
 * {
-    
     padding: 0;
     box-sizing: border-box;
 }
 li {
     list-style-type: none;
 }
+body {
+    font:400 22px "Roboto", sans-serif;/*estamos dando peso da fonte para reduzir a barra branca depois do rodapé*/
+}
+
 /*Cabeçalho padrão - header */
 .main-header {
     background-image: url(background-image.png);
@@ -35,25 +38,30 @@ li {
 .main-nav {
     width: 100%;
 }
+
 .header-list-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
 }
+
 .nav-item {
     text-transform: uppercase;
     color: var(--blue);
 
 }
+
 hr {
     width: 100%;
 }
+
 .nav-item a {
     text-decoration: none;
     color: inherit;
 
 }
+
 .nav-item:hover {
     color: var(--skyblue);
     transition: 0,5s;
@@ -65,12 +73,14 @@ hr {
 .main-about {
     padding:40px 0px 64px;/*três elementos no padding diz que temos um espaçamento em cima, na direita e esuqerda e em baixo, respectivamente*/
 }
+
 .container {
     max-width: 600px;
     padding: 0 16px;
     margin: 0 auto;
 }
-.about-title {
+
+.title-median {
     font-family: "Raleway", sans-serif;
     font-size: 32px;
     text-align: center;
@@ -78,12 +88,14 @@ hr {
     margin-bottom: 24px;
 
 }
+
 .about-image {
     float: left;
     margin: 0 20px 10px 0 ;
     width: 200px;
     height: auto;
 }
+
 .about-description {
     color: var(--gray);
     text-align: justify;
@@ -98,22 +110,20 @@ hr {
     background-color: var(--skyblue);
     padding: 15px 0;   
 }
-.main-footer-container {
+
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     
 }
+
 .title-smaller {
     font-family: "Raleway", sans-serif;
     color: var(--blue);
     font-size: 26px;
 }
-.list-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .footer-item {
     width: 50px;
     height: 50px;
@@ -121,5 +131,74 @@ hr {
 }
 
 .footer-item + .footer-item {
-    margin-left: auto;
+    margin-left:16px;
 }
+
+/*PÁGINA CONTATO*/
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.contact {
+    background-color: var(--skyblue);
+    padding: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.contact-label {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+
+.contact-field {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+}
+.contact-field:focus /*o focus realiza modificações dentro das caixas*/ {
+    background-color: var(--gray);
+    outline: none;/*Remove a linha de dentro das caixas*/
+
+}
+textarea.contact-field {
+    height: 150px;
+    padding: 10px;
+    font-family: "Roboto", Calibri;
+}
+
+.button-form {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    background-color: var(--white);
+    color: var(--blue);
+
+}
+
+.contact-maps {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+
+
+
+

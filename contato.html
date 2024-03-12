@@ -18,92 +18,90 @@
     
     <body>
         <!--Cabeçalho-->
-        <header> 
+        <header class="main-header"> 
 
-            <nav>
+            <nav class="main-nav container">
                 <!--Lista não ordenada-->
-                <ul>  
+                <ul class="header-list-container">  
                     <!--Tópicos-->
-                    <li>
+                    <li class="nav-item">
                         <!--Logotipo-->
                         <a href="index.html"><img src="images/logo.png" alt="logo" height="100" width="100"></a> 
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="loja.html">LOJA</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="contato.html">CONTATO</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="sobre.html">SOBRE</a>
                     </li>
                 
                 </ul>
             
             </nav>
+            <hr>
         </header>
-
             <!--Inicio do site-->
             <main>
-                <h2>Contato</h2>
-                <p>Os campos com * são de preenchimento obrigatório</p>
+                <h2 class="title-median">Contato</h2>
+                <p class="contact-text">Os campos com * são de preenchimento obrigatório</p>
                 
-                <!--Formulá<rio-->
-                <form>
+                <!--Formulário-->
+                <form class="contact">
 
-                    <label>
-                        Nome:<input type="texto" required>
+                    <label class="contact-label">
+                        Nome:<input type="texto" required class="contact-field">
                     </label>
                 
-                    <label>
-                        Email:<input type="email" required>
+                    <label class="contact-label">
+                        Email:<input type="email" required class="contact-field">
                     </label>
                 
-                    <label>Assunto:
-                        <select>
+                    <label class="contact-label">Assunto*
+                        <select class="contact-field">
+                            <option>Newsletter</option>
                             <option>Sugestões</option>
                             <option>Dúvidas</option>
                             <option>Críticas</option>
                         </select>
                     </label>
                 
-                    <label>Mensagem:
-                        <textarea required placeholder="Escreva sua mensagem"></textarea>
+                    <label class="contact-label">Mensagem:
+                        <textarea required placeholder="Escreva sua mensagem" class="contact-field"></textarea>
                     </label>
                 
-                    <label>
-                        <button type="button">Enviar</button>
-                    </label>
-
-
+                    <button type="button" class="button-form">Enviar</button>
+                    
                 </form>
+
+                <div class="contact-maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15930.152817929627!2d-42.380020040911184!3d-3.4617545755619816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ed685e670dc447%3A0xdc16345b00038acd!2sLuzil%C3%A2ndia%2C%20PI%2C%2064160-000!5e0!3m2!1spt-BR!2sbr!4v1709729716110!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-            
+                </div>
+
             </main>
         <!--RODAPÉ-->
-        <footer>
+        <footer class="main-footer">
 
-            <div>
-                <h3>
-                    VENDAS LIVRES STORE - VICTOR FREITAS GARCES @ 2024
-                    <ul>
-                        <li>
+            <div class="footer-container">
+                <h3 class="title-smaller">VENDAS LIVRES STORE - VICTOR FREITAS GARCES @ 2024 </h3>
+                    <ul class="footer-container">
+                        <li class="footer-item">
                             <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram.logo"></a>
                         </li>
-                        <li>
+                        <li class="footer-item">
                             <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook.logo"></a>
                         </li>
-                        <li> 
+                        <li class="footer-item"> 
                             <a href="https://open.spotify.com/intl-pt" target="_blank"><img src="images/spotify.svg"></a>
                         </li>
-                        <li>
+                        <li class="footer-item">
                             <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg"></a>
                         </li>
                     </ul>
-                </h3>
-            </div>
-        </footer>        
         
+            </div>
+        </footer>
     </body>
 </html>
