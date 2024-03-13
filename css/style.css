@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 
 /* Aqui criamos variáveis para auxiliar na hora de colorir um item no site*/
@@ -68,6 +68,35 @@ hr {
 
 }
 
+/* RODAPÉ - FOOTER*/
+.main-footer {
+    background-color: var(--skyblue);
+    padding: 15px 0;   
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.title-smaller {
+    font-family: "Raleway", sans-serif;
+    color: var(--blue);
+    font-size: 26px;
+}
+
+.footer-item {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;
+}
+
+.footer-item + .footer-item {
+    margin-left:16px;
+}
+
 /*Página Sobre*/
 
 .main-about {
@@ -99,39 +128,6 @@ hr {
 .about-description {
     color: var(--gray);
     text-align: justify;
-}
-
-
-
-
-
-/* RODAPÉ - FOOTER*/
-.main-footer {
-    background-color: var(--skyblue);
-    padding: 15px 0;   
-}
-
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.title-smaller {
-    font-family: "Raleway", sans-serif;
-    color: var(--blue);
-    font-size: 26px;
-}
-
-.footer-item {
-    width: 50px;
-    height: 50px;
-    padding: 15px 0;
-}
-
-.footer-item + .footer-item {
-    margin-left:16px;
 }
 
 /*PÁGINA CONTATO*/
@@ -197,6 +193,39 @@ textarea.contact-field {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 20px;
+}
+
+/*PÁGINA HOME(INDEX)*/
+
+.title-header {
+    font-family: "Madimi One", cursive;
+    color: var(--blue);
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+.title-large {
+    font-family: "Rock Salt", cursive;
+    font-size: 38px;
+    color: var(--blue);
+    text-align: center;
+
+}
+.description {
+    text-align: center;
+    color: var(--gray);
+    padding-bottom: 10px;
+}
+.emphasis {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border-radius: 25px;
+
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 
