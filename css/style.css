@@ -15,13 +15,14 @@
 
 /*Resetamos para iniciar o estilo*/
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 li {
     list-style-type: none;
 }
-body {
+body, button, input {
     font:400 22px "Roboto", sans-serif;/*estamos dando peso da fonte para reduzir a barra branca depois do rodapé*/
 }
 
@@ -226,7 +227,52 @@ textarea.contact-field {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 30px;
 }
+
+.product {
+    display: flex;
+    flex-direction: column;/*Estamos dizendo que queremos todos na mesma coluna*/
+    align-items: center;
+}
+.product-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.product-image {
+    width: 320px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+.product-price-container {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.product-price {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+.button-hover {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border: 2px solid var(--skyblue);
+    border-radius: 10px;
+    padding: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;/*Quando o curso passar em cima do botão, irá mudar para a mãozinha*/
+    margin: 5px;
+}
+.button-hover:hover {
+    background-color:transparent;
+
+}
+
+
+
+
 
 
 
