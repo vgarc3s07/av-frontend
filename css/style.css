@@ -269,6 +269,18 @@ textarea.contact-field {
     background-color:transparent;
 
 }
+/*Carrinho da página Loja*/
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;/*Imenda as linhas abaixo das colunas*/
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+.table-header-item {
+    text-align: start;
+    border-bottom: 2px solid var(--darkgray);
+
+}
 
 
 
