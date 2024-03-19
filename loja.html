@@ -165,7 +165,7 @@
 
                     <h2 class="title-median">Carrinho</h2>
                     <!--Criamos uma tabela-->
-                    <table class="cart-table">
+                    <table class="cart-table container">
                         <!--Cabeçalho da tabela-->
                         <thead>
                             <tr><!--Criamos colunas-->
@@ -179,7 +179,7 @@
                         <!--Corpo da tabel-->
                         <tbody>
                             <tr class="cart-product"><!--Criamos colunas-->
-                                <td class="product-dentification"><!--No corpo, as colunas serão com a tag <td>-->
+                                <td class="product-identification"><!--No corpo, as colunas serão com a tag <td>-->
                                     <img src="images/meia-preta.jpeg" alt="Meia-preta" class="cart-product-image">
                                     <strong class="cart-product-title">Meia-Preta</strong>
                                 </td>
@@ -189,14 +189,14 @@
                                 </td>
 
                                 <td>
-                                    <input type="number" value="1" min="0" class="cart-product-quant">
+                                    <input type="number" value="1" min="0" class="product-qnt-input"">
                                     <button type="button" class="remove-product-button">Remover</button>
                                 </td>
 
                             </tr>
 
                             <tr class="cart-product"><!--Criamos colunas-->
-                                <td class="product-dentification">
+                                <td class="product-identification">
                                     <img src="images/tenis-rosa.jpeg" alt="tenis-rosa" class="cart-product-image">
                                     <strong class="cart-product-title">Tênis Rosa</strong>
                                 </td>
@@ -206,7 +206,7 @@
                                 </td>
 
                                 <td>
-                                    <input type="number" value="1" min="0" class="cart-product-quant">
+                                    <input type="number" value="1" min="0" class="product-qnt-input">
                                     <button type="button" class="remove-product-button"> Remover</button>
                                 </td>
 
@@ -220,7 +220,7 @@
                             <tr>
                                 <td colspan="3" class="cart-total-container"><!--Dizemos que queremos -->
                                     <strong>Total:</strong>
-                                    <span>R$ 1000,00</span>
+                                    <span class="cart-total-price">R$ 1000,00</span>
                             </tr>
                         </tfoot>
 
