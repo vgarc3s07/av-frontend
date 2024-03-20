@@ -75,17 +75,21 @@ hr {
     padding: 15px 0;   
 }
 
-.footer-container {
+.main-footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .title-smaller {
     font-family: "Raleway", sans-serif;
     color: var(--blue);
     font-size: 26px;
+}
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-item {
@@ -101,7 +105,7 @@ hr {
 /*Página Sobre*/
 
 .main-about {
-    padding:40px 0px 64px;/*três elementos no padding diz que temos um espaçamento em cima, na direita e esuqerda e em baixo, respectivamente*/
+    padding:40px 0px 64px;/*três elementos no padding diz que temos um espaçamento em cima, na direita e esquerda e em baixo, respectivamente*/
 }
 
 .container {
@@ -349,6 +353,92 @@ textarea.contact-field {
     
 }
 
+/*Configurações para mobile*/
+
+@media (max-width: 740px) {
+    
+    /*Cabeçalho*/
+    .nav-item {
+        font-size: 18px;
+    }
+    .title-header {
+        font-size: 30px;
+        padding-top: 5px;
+    }
+    .title-large {
+        font-size: 22px;
+    }
+    .description {
+        padding: 0 7px;
+        padding-bottom: 15px;
+    }
+    .title-median {
+        font-size: 22px;
+        padding: 5px;
+        margin: 5px 8px;
+    }
+    .product-price {
+        font-size: 17px;
+        padding-left: 5px;
+    }
+
+    /*Rodapé*/
+    .main-footer-container {
+        flex-direction:column;
+    }
+    .title-smaller {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /*Página Loja*/
+    .cart-table {
+        margin: 0 5px;
+    }
+
+    .title-header {
+        font-size: 22px;
+        text-align: center;
+    }
+    .main-about {
+        padding:5px 2px 4px;
+    }
+    .product-container {
+        padding: 15px 0;
+    }
+    .table-header-item {
+        font-size: 14px;
+    }
+    .cart-product-image {
+        width:85px;
+        height: 85px;
+    }
+    .cart-product-title {
+        font-size: 15px;
+    }
+    .cart-product-price {
+        font-size: 15px;
+        padding-left:15px;
+    }
+    .product-qnt-input {
+        width: 20px;
+        height: 30px;
+        font-size: 19px;
+        border: 1px solid var(--blue);
+    }
+    .remove-product-button {
+        width: 50px;
+        height: 30px;
+    }
+
+    
+
+
+
+
+
+
+}
 
 
 
