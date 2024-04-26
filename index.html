@@ -14,6 +14,7 @@
         <!--link-->
         <link rel="shortcut icon" href="images/35594.svg" type="image/svg">
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
     
     <body>
@@ -26,10 +27,15 @@
                     <!--Tópicos-->
                     <li class="nav-item">
                         <!--Logotipo-->
-                        <a href="index.html"><img src="images/logo.png" alt="logo" width="100" height="100"></a> 
+                        <a href="index.html"><img src="images/logo.png" alt="logo" width="100" height="100" class="logo-zoom"></a> 
                     </li>
                     <li class="nav-item">
                         <a href="loja.html">LOJA</a>
+                        <ul class="sub-item">
+                            <li><a href="loja.html#tenis-section">Tênis</a></li>
+                            <li><a href="loja.html#meias-section">Meias</a></li>
+                            <li><a href="loja.html#toca-section">Tocas</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="contato.html">CONTATO</a>
@@ -61,17 +67,23 @@
                     <!--Produtos-->
                     <div class="product">
                         <strong class="product-title">Meia Branca</strong>
-                        <img src="images/meia-branca.jpeg" alt="meia-branca" class="product-image">
+
+                        <div class="product-box" id="box">
+                            <img class="product-image" id="imgprod" src="images/meia-branca.jpeg" alt="meia-branca" >
+                        </div>
                         <p class="product-description">Meia branca ótima para os treinos na academia,<br>proporcionando mais conforto!</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
                             <button type="button" class="button-hover">Adicionar ao carrinho</button>
                         </div>                       
+                    
                     </div>
 
                     <div class="product">
                         <strong class="product-title">Meia Preta</strong>
-                        <img src="images/meia-preta.jpeg" alt="meia-preta" class="product-image">
+                        <div class="product-box" id="box">
+                            <img src="images/meia-preta.jpeg" alt="meia-preta" class="product-image">
+                        </div>
                         <p class="product-description">Meia Preta ótima para os treinos na academia,<br>proporcionando mais conforto!</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
@@ -81,7 +93,9 @@
 
                     <div class="product">
                         <strong class="product-title">Tênis Azul</strong>
-                        <img src="images/tenis-azul.jpeg" alt="tenis-azul" class="product-image">
+                        <div class="product-box" id="box">
+                            <img src="images/tenis-azul.jpeg" alt="tenis-azul" class="product-image">
+                        </div>
                         <p class="product-description">Tênis Azul ideal para atividades mais esportivas,<br>trazendo performance sem deixar o estilo de lado!</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
@@ -91,7 +105,9 @@
 
                     <div class="product">
                         <strong class="product-title">Tênis Rosa</strong>
-                        <img src="images/tenis-rosa.jpeg" alt="tenis-rosa" class="product-image">
+                        <div class="product-box" id="box">
+                            <img src="images/tenis-rosa.jpeg" alt="tenis-rosa" class="product-image">
+                        </div>
                         <p class="product-description">Tênis Rosa ideal para atividades mais esportivas<br>trazendo performance sem deixar o estilo de lado!</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
@@ -101,7 +117,9 @@
 
                     <div class="product">
                         <strong class="product-title">Kit-meias</strong>
-                        <img src="images/meia-kit.jpeg" alt="meia-kit" class="product-image">
+                        <div class="product-box" id="box"></div>
+                            <img src="images/meia-kit.jpeg" alt="meia-kit" class="product-image">
+                        <div class="product-box" id="box">
                         <p class="product-description">Kit de meias com 5 pares de variadas cores!</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
@@ -111,7 +129,9 @@
 
                     <div class="product">
                         <strong class="product-title">Toca Azul</strong>
-                        <img src="images/toca-azul.jpeg" alt="toca-azul" class="product-image">
+                        <div class="product-box" id="box"></div>
+                            <img src="images/toca-azul.jpeg" alt="toca-azul" class="product-image">
+                        </div>
                         <p class="product-description">Toca ideal para os dias mais frios!</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
@@ -121,7 +141,9 @@
 
                     <div class="product">
                         <strong class="product-title">Camiseta Lacoste</strong>
-                        <img src="images/roupa1-masculino.jpg" alt="" class="shirt-image">
+                        <div class="product-box" id="box">
+                            <img src="images/roupa1-masculino.jpg" alt="" class="shirt-image">
+                        </div>
                         <p class="product-description">Camiseta Lacoste com tecido confortável<br>e ideal para o dia a dia"</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
@@ -132,7 +154,8 @@
 
                     <div class="product">
                         <strong class="product-title">Camiseta Lacoste</strong>
-                        <img src="images/roupa2-masculino.jpg" alt="" class="shirt-image">
+                        <div class="product-box" id="box"></div>
+                            <img src="images/roupa2-masculino.jpg" alt="" class="shirt-image">
                         <p class="product-description">Camiseta Lacoste com tecido confortável<br>e ideal para o dia a dia"</p>
                         <div class="product-price-container">
                             <span class="product-price">R$ 129,99</span>
@@ -189,6 +212,8 @@
             
             </div>
         </footer>
+
+        <script src="script.js"></script>
         
     </body>
 </html>

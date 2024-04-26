@@ -61,13 +61,48 @@ hr {
 .nav-item a {
     text-decoration: none;
     color: inherit;
-
 }
 
 .nav-item:hover {
     color: var(--skyblue);
     transition: 0,5s;
 
+}
+
+.logo-zoom {
+    transition: transform 0.3s ease;
+}
+
+.logo-zoom:hover {
+    transform: scale(1.2);
+}
+
+.sub-item {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-item:hover .sub-item {
+    display: block;
+}
+
+.sub-item li {
+    margin-bottom: 5px;
+}
+
+.sub-item a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.sub-item a:hover {
+    text-decoration: none;
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: var(--blue);
 }
 
 /* RODAPÉ - FOOTER*/
@@ -245,10 +280,17 @@ textarea.contact-field {
     font-size: 20px;
     margin-bottom: 6px;
 }
+.product-box {
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 5px black;
+    margin-bottom: 20px;
+}
+
 .product-image {
     width: 320px;
     height: 220px;
-    margin-bottom: 20px;
+    transform-origin: center center;
+    object-fit: cover;
 }
 
 .product-price-container {
@@ -365,9 +407,9 @@ textarea.contact-field {
 .purchase-button:hover {
     filter: brightness(0.8);
 }
-.cart-total-price {
+/*.cart-total-price {
     
-}
+}*/
 .container-quant-button {
     display: flex;
     flex-direction: column;    
