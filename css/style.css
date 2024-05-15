@@ -7,7 +7,7 @@
     --blue: #00008B;
     --gray: #555555;
     --skyblue: #00BFFF;
-    --silver: #c0c0c0c0;
+    --silver: #c0c0c0;
     --red: #ff0000;
     --white: #ffffff;
     --darkgray: #959595;
@@ -27,14 +27,27 @@ body, button, input {
 }
 
 /*Cabeçalho padrão - header */
+
 .main-header {
-    background-image: url(background-image.png);
-    background-position: 50% 39%;
+   background-image: url(background-image.png);
+	background-position: 50% 39%; /*Alinha os elementos nos eixos x e y*/
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+	padding-bottom: 40px;
 
+}
+
+.video {
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    /*min-width: 100%;
+    min-height: 100%;*/
+    z-index: -1;
+    object-fit: cover;
 }
 
 .main-nav {
@@ -60,7 +73,7 @@ hr {
 
 .nav-item a {
     text-decoration: none;
-    color: inherit;
+	color: inherit;
 }
 
 .nav-item:hover {
@@ -107,7 +120,7 @@ hr {
 
 /* RODAPÉ - FOOTER*/
 .main-footer {
-    background-color: var(--skyblue);
+    /*background-color: var(--skyblue);*/
     padding: 15px 0;   
 }
 
@@ -274,7 +287,7 @@ textarea.contact-field {
     display: flex;
     flex-direction: column;/*Estamos dizendo que queremos todos na mesma coluna*/
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto; /*rever*/
 }
 .product-title {
     font-size: 20px;
@@ -283,6 +296,7 @@ textarea.contact-field {
 .product-box {
     border-radius: 8px;
     box-shadow: 3px 3px 5px 5px black;
+	overflow: hidden; /*add*/
     margin-bottom: 20px;
 }
 
@@ -328,6 +342,37 @@ textarea.contact-field {
     color: var(--gray);
     font-size: 22px;
     text-align: center;
+}
+
+#voltarAoTopo {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+#Iraofim {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    left: 50px;
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.scroll {
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -417,9 +462,9 @@ textarea.contact-field {
 
 /*Configurações para mobile*/
 
-@media (max-width: 740px) {
+/*@media (max-width: 740px) {
     
-    /*Cabeçalho*/
+    /*Cabeçalho
     .nav-item {
         font-size: 18px;
     }
@@ -444,7 +489,7 @@ textarea.contact-field {
         padding-left: 5px;
     }
 
-    /*Rodapé*/
+    /*Rodapé
     .main-footer-container {
         flex-direction:column;
     }
@@ -453,7 +498,7 @@ textarea.contact-field {
         text-align: center;
     }
 
-    /*Página Loja*/
+    /*Página Loja
     .cart-table {
         margin: 0 5px;
     }
@@ -493,7 +538,7 @@ textarea.contact-field {
         height: 30px;
     }
 
-    /*Página de contato*/
+    /*Página de contato
     
     .contact-text {
         font-size: 22px;
@@ -513,18 +558,4 @@ textarea.contact-field {
     }
 
     
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
+}*/
